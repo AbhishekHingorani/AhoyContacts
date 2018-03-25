@@ -30,13 +30,13 @@ The application was tested locally on:
 
 ## Screenshots
 
-![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/home.png=540x960)
+![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/home.png =540x960)
 
-![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/login.png=540x960)
+![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/login.png =540x960)
 
-![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/contacts.png=540x960)
+![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/contacts.png =540x960)
 
-![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/addcontact.png=540x960)
+![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/addcontact.png =540x960)
 
 
 ## Author
