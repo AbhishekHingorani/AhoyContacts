@@ -21,6 +21,14 @@ Ahoy Contacts uses Gradle build system
 <li>Build and run the project.</li>
 </ol>
 
+## Assumptions
+
+<ul>
+<li>User has an Android device with Android Lollipop(5.1) or above</li>
+<li>The contact number is of maximum 10 digits (including the country code)</li>
+<li>There cannot be multiple persons with same contact number</li>
+</ul>
+
 ## Testing
 The application was tested locally on:
 <ol>
