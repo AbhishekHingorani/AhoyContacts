@@ -21,19 +21,29 @@ Ahoy Contacts uses Gradle build system
 <li>Build and run the project.</li>
 </ol>
 
-##Testing
+## Testing
 The application was tested locally on:
 <ol>
 <li>Samsung Galaxy S8</li>
 <li>Moto G4 Plus</li>
 </ol>
 
-##Screenshots
+## Screenshots
 
+<ul>
+<li>
 ![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/home.png)
+</li>
+<li>
 ![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/login.png)
+</li>
+<li>
 ![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/contacts.png)
+</li>
+<li>
 ![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/addcontact.png)
+</li>
+</ul>
 
 ## Author
 
