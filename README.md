@@ -30,10 +30,10 @@ The application was tested locally on:
 
 ##Screenshots
 
-![ScreenShot](https://raw.github.com/{username}/{repository}/{branch}/{path})
-![ScreenShot](https://raw.github.com/{username}/{repository}/{branch}/{path})
-![ScreenShot](https://raw.github.com/{username}/{repository}/{branch}/{path})
-![ScreenShot](https://raw.github.com/{username}/{repository}/{branch}/{path})
+![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/home.png)
+![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/login.png)
+![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/contacts.png)
+![ScreenShot](https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/addcontact.png)
 
 ## Author
 
