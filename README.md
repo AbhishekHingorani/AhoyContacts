@@ -38,6 +38,7 @@ The application was tested locally on:
 
 <img src="https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/addcontact.png" width="270" height="480">
 
+<img src="https://raw.github.com/AbhishekHingorani/AhoyContacts/master/screenshots/edit.png" width="270" height="480">
 
 ## Author
 
