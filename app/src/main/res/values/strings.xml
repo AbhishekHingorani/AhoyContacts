@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jump360</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_loin_signup">LoinSignupActivity</string>
+
+    <string name="my_google_api_key">AIzaSyAU-lDDAc47S-tpptZJidaHYEsE-bVxBycx</string>
+</resources>

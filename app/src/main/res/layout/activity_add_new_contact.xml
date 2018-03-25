@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hingo.jump360.AddNewContact"
+    android:background="@drawable/android_mobile___2"
+    android:id="@+id/titleBar">
+
+    <!--logo-->
+    <ImageView
+        android:id="@+id/add_contactsLogo"
+        android:layout_width="78dp"
+        android:layout_height="46dp"
+        android:textAlignment="center"
+        android:src="@drawable/ahoy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!--content below logo-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/add_contactsLogo">
+
+        <!--Contacts name-->
+        <EditText
+            android:id="@+id/add_contactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:textColor="#484848"
+            android:textColorHint="#999"
+            android:inputType="textPersonName"/>
+
+        <!--contacts phone number-->
+        <EditText
+            android:id="@+id/add_contactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_contactName"
+            android:hint="Contact No"
+            android:drawableLeft="@drawable/call"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:textColor="#484848"
+            android:textColorHint="#999"
+            android:paddingTop="20dp"
+            android:inputType="phone"
+            android:maxLength="10"
+            />
+
+        <!--pick new location button-->
+        <Button
+            android:id="@+id/add_location_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/add_contactNumber"
+            android:background="@drawable/rectangle_2"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_locationlogo"
+            android:padding="15dp"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="10sp"
+            android:drawableTint="#ffffff"
+            android:text="Pick Location"
+            />
+
+        <!--Map Fragment to show users location(address)-->
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/add_location_btn"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            tools:context=".AddNewContact" />
+
+        <!--ok button-->
+        <Button
+            android:id="@+id/add_contact_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/mapFragment"
+            android:background="@drawable/btnok"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            />
+
+        <!--Loading bar-->
+        <ProgressBar
+            android:id="@+id/progress_addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

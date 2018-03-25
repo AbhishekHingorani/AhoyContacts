@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "25934293830",
+    "firebase_url": "https://jump360-572d6.firebaseio.com",
+    "project_id": "jump360-572d6",
+    "storage_bucket": "jump360-572d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25934293830:android:bc278e35482c20ab",
+        "android_client_info": {
+          "package_name": "com.example.hingo.jump360"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25934293830-m2u3g4g34ss2c8f039lkt151k8v6fp35.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hingo.jump360",
+            "certificate_hash": "2e0ca7300e2380ed2fdb2fd40b089c52f3695198"
+          }
+        },
+        {
+          "client_id": "25934293830-jl2fae9m8mkokahlffbqitsi0en0rclh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3wN3KzqnIy5Mem9kIPoS5qqnAwqdSSW4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25934293830-jl2fae9m8mkokahlffbqitsi0en0rclh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

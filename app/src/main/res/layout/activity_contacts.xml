@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--For side Navigation Drawer and content-->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--Content in the main(center) screen-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/android_mobile___2">
+
+        <!--logo-->
+        <ImageView
+            android:id="@+id/contactsLogo"
+            android:layout_width="78dp"
+            android:layout_height="46dp"
+            android:textAlignment="center"
+            android:src="@drawable/ahoy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"/>
+
+        <!--Open navigation drawer btn-->
+        <Button
+            android:id="@+id/contactSideMenuButton"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:layout_width="23dp"
+            android:layout_height="18dp"
+            android:background="@drawable/sidenav" />
+
+        <!--Scrolling view in between-->
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/contactsLogo"
+            tools:context="com.example.hingo.jump360.ContactsActivity">
+
+            <!--Recycles to show all contacts-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/contactsRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/contactsLogo"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="200dp"
+                android:clipToPadding="false">
+            </android.support.v7.widget.RecyclerView>
+        </ScrollView>
+
+        <!--Loading bar-->
+        <ProgressBar
+            android:id="@+id/pb_contactsLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"/>
+
+        <!--This textview shows message that there are no contacts in recyler-->
+        <TextView
+            android:id="@+id/tv_noContactsYet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No contacts yet, Add new contacts."
+            android:visibility="gone"/>
+
+        <!--For the blur/fade below the add contact button-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:src="@drawable/belowfade"
+            android:layout_alignParentBottom="true" />
+
+        <!--Add new Contact button-->
+        <Button
+            android:id="@+id/btn_addNewContact"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/addnewcontactbutton"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+
+
+    <!--Side Navigation Drawer-->
+    <RelativeLayout
+        android:id="@+id/whatYouWantInRightDrawer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efdaee"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:id="@+id/upperHeader"
+            android:layout_height="178dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="30dp">
+
+            <!--User Photo-->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/contactpic"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="55dp" />
+
+            <!--Users Email-->
+            <TextView
+                android:id="@+id/tv_nameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Abhishek Hingorani"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/upperHeader"
+            android:gravity="center|left"
+            android:paddingLeft="20dp">
+
+            <!--Logout btn-->
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Logout"/>
+        </LinearLayout>
+        <!-- you can have many more widgets here like buttons or labels -->
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

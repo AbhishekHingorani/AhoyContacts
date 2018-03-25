@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hingo.jump360.AddNewContact"
+    android:background="@drawable/android_mobile___2"
+    android:id="@+id/titleBar">
+
+    <!--Logo-->
+    <ImageView
+        android:id="@+id/add_contactsLogo"
+        android:layout_width="78dp"
+        android:layout_height="46dp"
+        android:textAlignment="center"
+        android:src="@drawable/ahoy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!--Everything below logo-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:layout_below="@id/add_contactsLogo">
+
+        <!--For Name-->
+        <TextView
+            android:id="@+id/tv_ContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/account"
+            android:textSize="20sp"
+            android:text="Abhi"
+            android:paddingTop="10dp"
+            android:drawablePadding="5dp"
+            />
+
+        <!--For name, So that user can edit name. Hidden by default. Shown when user selects "edit contact" btn-->
+        <EditText
+            android:id="@+id/et_add_contactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:textColor="#484848"
+            android:textColorHint="#999"
+            android:inputType="textPersonName"
+            android:visibility="invisible"/>
+
+        <!--Contact Number-->
+        <TextView
+            android:id="@+id/tv_ContactNumber"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_ContactName"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/call"
+            android:paddingTop="30dp"
+            android:textSize="20sp"
+            android:text="9494949494"
+            android:drawablePadding="5dp"
+            />
+
+        <!--For contact number, So that user can edit contactNo. Hidden by default. Shown when user selects "edit contact" btn-->
+        <EditText
+            android:id="@+id/et_add_contactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_add_contactName"
+            android:hint="Contact No"
+            android:drawableLeft="@drawable/call"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:textColor="#484848"
+            android:textColorHint="#999"
+            android:paddingTop="20dp"
+            android:inputType="phone"
+            android:visibility="invisible"
+            android:maxLength="10"
+            />
+
+        <!--Fragment to show static map-->
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/et_add_contactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            tools:context=".AddNewContact" />
+
+        <!--Change location btn. Disabled by default. Enabled whe user selects edit contact btn-->
+        <Button
+            android:id="@+id/btn_changeLocation"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btnlocation"
+            android:layout_below="@id/mapFragment"
+            android:layout_marginTop="10dp"
+            android:enabled="false" />
+
+        <!--Edit Contact btn. Enables EditTexts and Location btn-->
+        <Button
+            android:id="@+id/btn_editContact"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btneditcontact"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/mapFragment"
+            android:layout_marginTop="10dp"/>
+
+        <!--Delete Contact-->
+        <Button
+            android:id="@+id/btn_deleteContact"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btndeletecontact"
+            android:layout_below="@id/mapFragment"
+            android:layout_marginTop="10dp"/>
+
+        <!--Save Changes btn-->
+        <Button
+            android:id="@+id/btn_Done"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:text="DONE"
+            android:textColor="#ffffff"
+            android:background="@drawable/loginbtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+
+        <!--Loading bar-->
+        <ProgressBar
+            android:id="@+id/progressEditDelete"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

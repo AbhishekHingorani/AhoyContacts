@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_mobile___2"
+    tools:context="com.example.hingo.jump360.HomeActivity">
+
+    <!--logo-->
+    <ImageView
+        android:id="@+id/iv_Logo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="132dp"
+        app:srcCompat="@drawable/ahoy"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--Using TextView instead of button because the background is transparent-->
+    <TextView
+        android:id="@+id/tv_createAccountBtn"
+        android:layout_width="299dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/iv_Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/rectangle_2"
+        android:text="CREATE ACCOUNT"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+    />
+
+    <!--TextView for message "Already a user"-->
+    <TextView
+        android:id="@+id/tv_already_user"
+        android:layout_below="@+id/tv_createAccountBtn"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Already a user?"
+        android:textSize="15dp"
+        android:textColor="#706B7B"
+        android:gravity="center"
+        />
+
+    <!--Login Button-->
+    <TextView
+        android:id="@+id/tv_loginBtn"
+        android:layout_width="299dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv_already_user"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/loginbtn"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        />
+</RelativeLayout>

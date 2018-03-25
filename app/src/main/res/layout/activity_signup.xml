@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/android_mobile___2"
+    android:padding="40dp">
+
+    <!--logo-->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ahoy"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!--Email-->
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_below="@id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="0dp"
+        android:textColor="#484848"
+        android:textColorHint="#999" />
+
+    <!--Password-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_below="@id/signupEmail"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingTop="20dp"
+        android:ems="10"
+        android:id="@+id/signupPassword"
+        android:drawableLeft="@drawable/lock"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:textColor="#484848"
+        android:paddingLeft="0dp"
+        android:drawablePadding="5dp"
+        android:textColorHint="#999"/>
+
+    <!--Sgnup Btn-->
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/signupPassword"
+        android:text="Sign up"
+        android:id="@+id/btnSignup"
+        android:textColor="#ffffff"
+        android:background="@drawable/loginbtn"
+        android:layout_gravity="center_horizontal"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+    <!--Loading bar-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignup"
+        android:id="@+id/loadingBar"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
